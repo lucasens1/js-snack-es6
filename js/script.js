@@ -106,3 +106,28 @@ console.log('----------------------------')
 Scrivere una funzione che accetti tre argomenti, un array e due numeri (a più piccolo di b).
 La funzione ritornerà un nuovo array con i valori che hanno la posizione compresa tra i due numeri.
 Usiamo i nuovi metodi degli array foreach o filter. */
+
+let activeIndex = 0;
+const numbers = [2, 4, 6, 9, 10, 24, 27, 59, 90, 300];
+let intNumbersArray = [];
+returnInterval(numbers , 3 , 60);
+
+
+/**
+ * Funzione che servendosi di forEach effettua un controllo su tutto l'array salvando gli elementi dell'array in entrata su un nuovo array che avrà semplicemente l'intervallo di numeri compresi
+ *
+ * @param {*} array
+ * @param {*} a
+ * @param {*} b
+ */
+function returnInterval(array, a, b){
+    let i = 0;
+    array.forEach((curNum) => {
+        if ( curNum > a && curNum < b){
+            intNumbersArray[i] = curNum;
+            i++
+        }
+    })
+}
+
+console.log('Questa è la versione senza Filter : ', intNumbersArray)
