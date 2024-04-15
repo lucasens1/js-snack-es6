@@ -130,4 +130,14 @@ function returnInterval(array, a, b){
     })
 }
 
-console.log('Questa è la versione senza Filter : ', intNumbersArray)
+console.log('Questa è la versione senza Filter : ', intNumbersArray);
+
+function arrayFiltered(array, a, b){
+    return array.filter((element) => element > a && element < b);
+}
+
+const newArray = arrayFiltered(numbers, 6, 299);
+
+console.log('Questa è la versione filtrata : ',newArray)
+
+
