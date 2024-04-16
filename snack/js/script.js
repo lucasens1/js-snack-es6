@@ -85,8 +85,14 @@ for ( let i = 0 ; i < teams.length ; i++ ){
     curTeam.fouls = Math.floor(Math.random() * 1000 + 1) - 1;
     console.log(curTeam);
 }
-
+//Nuovo array = arrayDaCopiare.map(La parentesi tonda sarebbe il curElem e del curElem essendo object prendo le proprietà {name, fouls}) => la copio nel (curElem dell'array passando sempre tra le graffe {name, fouls})
 const newTeamsArray = teams.map(({ name, fouls }) => ({ name, fouls }));
+/*
+    const newTeamsArray = teams.map((curTeam) => {
+        const {name , fouls} = curTeam;
+        return {name , fouls};
+    })
+*/
 console.log(newTeamsArray)
 
 document.getElementById('teams').innerHTML = `<br>
