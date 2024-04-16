@@ -5,14 +5,16 @@ const persone = [
     {nome : "francesca", cognome : "rosi", eta : 25},
 ]
 
-const personeGuidano = persone.filter((curPersona) => {
+const personeGuidanoeNon = persone.map((curPersona) => {
     if(curPersona.eta >= 18){
-        curPersona.frase = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " può guidare perché ha : " + curPersona.eta + " anni"; 
-        return curPersona;
+        return guida = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " può guidare perché ha : " + curPersona.eta + " anni"; 
+        
     } else{
-        curPersona.frase = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " non può guidare perché ha : " + curPersona.eta + " anni"; 
-        return curPersona;
+        return guida = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " non può guidare perché ha : " + curPersona.eta + " anni"; 
+        
     }
 })
 
-console.log(personeGuidano)
+console.log('Questa è la lista aggiornata delle persone con la nuova proprietà :', personeGuidanoeNon)
+
+console.log(persone)
