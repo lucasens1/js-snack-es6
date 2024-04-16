@@ -11,12 +11,32 @@ const automobili = [
     { marca: "Opel", modello: "Corsa", alimentazione: "gpl" }
   ];
 
-//Dividi le automobili in 3 array separati : nel primo solo auto a benzina, nel secondo solo le auto a diesel, nel terzo restante
+/* const autoBenz = automobili.filter((curAuto) => {
+    return curAuto.alimentazione === "benzina";
+}); */
 
-//Auto a benzina -> automobili.alimentazione : benzina
-let benza = "benzina";
-let diesel = "diesel";
-
+/* console.log(autoBenz)
+ */
 const autoBenz = [];
+let iBenz = 0;
 
+const autoDiesel = [];
+let iDiesel = 0;
 
+const miscAuto = [];
+let iMisc = 0;
+
+automobili.forEach((curAuto) => {
+    if(curAuto.alimentazione === "benzina"){
+        autoBenz[iBenz] = curAuto;
+        iBenz++;
+    } else if(curAuto.alimentazione === "diesel"){
+        autoDiesel[iDiesel] = curAuto;
+        iDiesel++;
+    } else {
+        miscAuto[iMisc] = curAuto;
+        iMisc++; 
+    }
+})
+
+console.log(autoBenz, autoDiesel, miscAuto)
