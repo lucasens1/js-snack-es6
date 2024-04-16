@@ -7,7 +7,7 @@ const persone = [
 
 const personeGuidano = persone.filter((curPersona) => {
     if(curPersona.eta >= 18){
-        curPersona.frase = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " può guidare perché ha : " + curPersona.eta; 
+        curPersona.frase = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " può guidare perché ha : " + curPersona.eta + " anni"; 
         return curPersona;
     }
 })
