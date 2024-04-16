@@ -38,5 +38,4 @@ automobili.forEach((curAuto) => {
         iMisc++; 
     }
 })
-
 console.log(autoBenz, autoDiesel, miscAuto)
