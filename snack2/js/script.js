@@ -7,10 +7,10 @@ const persone = [
 
 const personeGuidanoeNon = persone.map((curPersona) => {
     if(curPersona.eta >= 18){
-        return guida = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " può guidare perché ha : " + curPersona.eta + " anni"; 
+        return "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " può guidare perché ha : " + curPersona.eta + " anni"; 
         
     } else{
-        return guida = "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " non può guidare perché ha : " + curPersona.eta + " anni"; 
+        return "Il Sign/ra " + curPersona.nome + " " + curPersona.cognome + " non può guidare perché ha : " + curPersona.eta + " anni"; 
         
     }
 })
