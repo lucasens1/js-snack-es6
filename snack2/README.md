@@ -6,4 +6,4 @@ inizializzo un array con tutte le informazioni che mi servono, quindi nome cogno
 
 nell'array sicuramente l'elemento che mi interessa è l'età per capire se può guidare o meno.
 
-quindi controllo l'età di ogni persona, con un ciclo forEach, e ad ogni persona maggiorenne la inserisco in un nuovo array dove avrà appunto un nuovo valore;
+utilizzo il metodo filter -> per passare nel nuovo array con le persone che guidano solo chi ha età >= a 18 anni e aggiungo una nuova proprietà che avrà "frase" al suo interno, una frase che appunto dice se può o non può guidare;
